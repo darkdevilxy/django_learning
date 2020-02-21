@@ -1,0 +1,35 @@
+.blog-post-container{
+  padding: 14px 16px;
+  margin: 13px;
+  border:2px solid grey;
+  border-radius: 3px;
+  background-color: white;
+  text-decoration: none;
+  text-align: left;
+  font-family: sans-serif;
+  height: auto;
+  line-height: 0px;
+  width: 500px;
+}
+.blog-post-container:hover{
+  background-color: grey;
+  color: white;
+}
+.title-container{
+  margin: 0px;
+  padding: 0px;
+  border: 2px;
+}
+.content-container{
+  font-size: 11;
+  margin: 0px;
+  padding: 0px;
+  border: 2px;
+}
+.info-container{
+  font-size: 14;
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  border: 2px;
+}

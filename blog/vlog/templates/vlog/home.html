@@ -1,11 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h2>Hello World</h2>
+{% extends "vlog/base.html" %}
+{% load static %}
+{% block body %}
 
-</body>
-</html>
+<link rel="stylesheet" href="{% static 'vlog/style/home.css' %} ">
+
+    {% for post in posts%}
+
+        <div class="blog-post-container">
+            <div class="title-container">
+                <h4>{{ post.title }}</h4>
+            </div>
+            <hr>
+            <div class="content-container">
+                <p>{{ post.content }}</p>
+            </div>
+            <hr>
+            <div class="info-container">
+               <p>{{ post.author }}, {{ post.date }}</p>
+            </div>
+        </div>
+
+    {% endfor %}
+{% endblock body %}
